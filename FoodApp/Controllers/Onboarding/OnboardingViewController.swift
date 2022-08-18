@@ -8,7 +8,7 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextBtn: UIButton!
@@ -37,8 +37,10 @@ class OnboardingViewController: UIViewController {
                   OnboardingSlide(title: "Excellent Delivery", description: "Home delivery and Online Reservation system for restaurants and cafes", image: UIImage(imageLiteralResourceName: "food3")),
         ]
         
+        pageControl.numberOfPages = slides.count
+        
     }
-
+    
     @IBAction func nextBtnClicked(_ sender: UIButton) {
         
         if currentPage == slides.count - 1 {

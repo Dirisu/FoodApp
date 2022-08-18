@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6321EED1ED5F1CFD23C6AD /* Pods_FoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C54705E83D615072D3CC895 /* Pods_FoodApp.framework */; };
+		7053EBD728AEECDD0091D6D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBD628AEECDD0091D6D3 /* HomeViewController.swift */; };
+		7053EBDE28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBDC28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift */; };
+		7053EBDF28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7053EBDD28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib */; };
+		7053EBE128AEF8030091D6D3 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBE028AEF8030091D6D3 /* DishCategory.swift */; };
+		7053EBE328AEFA540091D6D3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBE228AEFA540091D6D3 /* String+Extension.swift */; };
 		70CF73AE2889E55C00530295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AD2889E55C00530295 /* AppDelegate.swift */; };
 		70CF73B02889E55C00530295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AF2889E55C00530295 /* SceneDelegate.swift */; };
 		70CF73B22889E55C00530295 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73B12889E55C00530295 /* OnboardingViewController.swift */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34608E04D4C1FC3DE573955A /* Pods-FoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodApp/Pods-FoodApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7053EBD628AEECDD0091D6D3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7053EBDC28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		7053EBDD28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		7053EBE028AEF8030091D6D3 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		7053EBE228AEFA540091D6D3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		70CF73AA2889E55C00530295 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF73AD2889E55C00530295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CF73AF2889E55C00530295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +44,8 @@
 		70CF73C92889EB0F00530295 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		70CF73CB2889ED2700530295 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		70CF73CD2889F1B200530295 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C54705E83D615072D3CC895 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76AD145EF87635D5226F605 /* Pods-FoodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.release.xcconfig"; path = "Target Support Files/Pods-FoodApp/Pods-FoodApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6321EED1ED5F1CFD23C6AD /* Pods_FoodApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7053EBD528AEECC80091D6D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7053EBD628AEECDD0091D6D3 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7053EBD828AEF4450091D6D3 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7053EBD928AEF46D0091D6D3 /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7053EBD928AEF46D0091D6D3 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7053EBDC28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift */,
+				7053EBDD28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		70CF73A12889E55C00530295 = {
 			isa = PBXGroup;
 			children = (
 				70CF73AC2889E55C00530295 /* FoodApp */,
 				70CF73AB2889E55C00530295 /* Products */,
+				8CDCF17FB8A04CDD228C8AFF /* Pods */,
+				AF669272DF7054CFB019DF65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				70CF73CB2889ED2700530295 /* OnboardingSlide.swift */,
+				7053EBE028AEF8030091D6D3 /* DishCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +149,8 @@
 		70CF73C72889E68000530295 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7053EBD828AEF4450091D6D3 /* CollectionViewCell */,
+				7053EBD528AEECC80091D6D3 /* Home */,
 				70CF73C42889E65000530295 /* Onboarding */,
 			);
 			path = Controllers;
@@ -115,8 +160,26 @@
 			isa = PBXGroup;
 			children = (
 				70CF73C92889EB0F00530295 /* UIView+Extensions.swift */,
+				7053EBE228AEFA540091D6D3 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8CDCF17FB8A04CDD228C8AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34608E04D4C1FC3DE573955A /* Pods-FoodApp.debug.xcconfig */,
+				D76AD145EF87635D5226F605 /* Pods-FoodApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF669272DF7054CFB019DF65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C54705E83D615072D3CC895 /* Pods_FoodApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70CF73C12889E55E00530295 /* Build configuration list for PBXNativeTarget "FoodApp" */;
 			buildPhases = (
+				2E803D934169B5E0F409A84D /* [CP] Check Pods Manifest.lock */,
 				70CF73A62889E55C00530295 /* Sources */,
 				70CF73A72889E55C00530295 /* Frameworks */,
 				70CF73A82889E55C00530295 /* Resources */,
+				EEDDF23BC1475B1D46425D96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7053EBDF28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib in Resources */,
 				70CF73BD2889E55E00530295 /* LaunchScreen.storyboard in Resources */,
 				70CF73BA2889E55E00530295 /* Assets.xcassets in Resources */,
 				70CF73B52889E55C00530295 /* Main.storyboard in Resources */,
@@ -185,14 +251,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E803D934169B5E0F409A84D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEDDF23BC1475B1D46425D96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70CF73A62889E55C00530295 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				70CF73B22889E55C00530295 /* OnboardingViewController.swift in Sources */,
+				7053EBE328AEFA540091D6D3 /* String+Extension.swift in Sources */,
+				7053EBE128AEF8030091D6D3 /* DishCategory.swift in Sources */,
 				70CF73B82889E55C00530295 /* FoodApp.xcdatamodeld in Sources */,
 				70CF73CA2889EB0F00530295 /* UIView+Extensions.swift in Sources */,
+				7053EBD728AEECDD0091D6D3 /* HomeViewController.swift in Sources */,
+				7053EBDE28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift in Sources */,
 				70CF73AE2889E55C00530295 /* AppDelegate.swift in Sources */,
 				70CF73CC2889ED2700530295 /* OnboardingSlide.swift in Sources */,
 				70CF73CE2889F1B300530295 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -338,6 +450,7 @@
 		};
 		70CF73C22889E55E00530295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34608E04D4C1FC3DE573955A /* Pods-FoodApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +479,7 @@
 		};
 		70CF73C32889E55E00530295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76AD145EF87635D5226F605 /* Pods-FoodApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

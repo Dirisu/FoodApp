@@ -9,11 +9,8 @@ import UIKit
 import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    
+    static let identifier = String(describing: CategoryCollectionViewCell.self)
 
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryTextLabel: UILabel!

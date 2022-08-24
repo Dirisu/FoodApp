@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-Ew-YYx">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-Ew-YYx" customClass="CardView" customModule="FoodApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bdv-Pw-EGV">
@@ -73,6 +73,11 @@
                 <constraint firstAttribute="bottom" secondItem="xJO-Ew-YYx" secondAttribute="bottom" id="r6r-u8-U36"/>
             </constraints>
             <size key="customSize" width="155" height="270"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="caloriesLabel" destination="YtV-4l-WqL" id="r7S-s6-ROy"/>
                 <outlet property="descriptionLabel" destination="Cge-BN-wql" id="yrC-kh-EIN"/>

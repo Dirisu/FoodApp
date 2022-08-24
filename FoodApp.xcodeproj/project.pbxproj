@@ -14,6 +14,9 @@
 		7053EBE128AEF8030091D6D3 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBE028AEF8030091D6D3 /* DishCategory.swift */; };
 		7053EBE328AEFA540091D6D3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBE228AEFA540091D6D3 /* String+Extension.swift */; };
 		7053EBE528B030850091D6D3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053EBE428B030850091D6D3 /* CardView.swift */; };
+		708901FE28B6D0C5008E4047 /* PopularDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708901FC28B6D0C5008E4047 /* PopularDishCollectionViewCell.swift */; };
+		708901FF28B6D0C5008E4047 /* PopularDishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708901FD28B6D0C5008E4047 /* PopularDishCollectionViewCell.xib */; };
+		7089020128B6D3A4008E4047 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089020028B6D3A4008E4047 /* Dish.swift */; };
 		70CF73AE2889E55C00530295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AD2889E55C00530295 /* AppDelegate.swift */; };
 		70CF73B02889E55C00530295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AF2889E55C00530295 /* SceneDelegate.swift */; };
 		70CF73B22889E55C00530295 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73B12889E55C00530295 /* OnboardingViewController.swift */; };
@@ -34,6 +37,9 @@
 		7053EBE028AEF8030091D6D3 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		7053EBE228AEFA540091D6D3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7053EBE428B030850091D6D3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		708901FC28B6D0C5008E4047 /* PopularDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishCollectionViewCell.swift; sourceTree = "<group>"; };
+		708901FD28B6D0C5008E4047 /* PopularDishCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishCollectionViewCell.xib; sourceTree = "<group>"; };
+		7089020028B6D3A4008E4047 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		70CF73AA2889E55C00530295 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF73AD2889E55C00530295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CF73AF2889E55C00530295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 		7053EBD828AEF4450091D6D3 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				708901FB28B6D092008E4047 /* PopularDishCollection */,
 				7053EBD928AEF46D0091D6D3 /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCell;
@@ -86,6 +93,15 @@
 				7053EBDD28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		708901FB28B6D092008E4047 /* PopularDishCollection */ = {
+			isa = PBXGroup;
+			children = (
+				708901FC28B6D0C5008E4047 /* PopularDishCollectionViewCell.swift */,
+				708901FD28B6D0C5008E4047 /* PopularDishCollectionViewCell.xib */,
+			);
+			path = PopularDishCollection;
 			sourceTree = "<group>";
 		};
 		70CF73A12889E55C00530295 = {
@@ -145,6 +161,7 @@
 			children = (
 				70CF73CB2889ED2700530295 /* OnboardingSlide.swift */,
 				7053EBE028AEF8030091D6D3 /* DishCategory.swift */,
+				7089020028B6D3A4008E4047 /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7053EBDF28AEF4E50091D6D3 /* CategoryCollectionViewCell.xib in Resources */,
+				708901FF28B6D0C5008E4047 /* PopularDishCollectionViewCell.xib in Resources */,
 				70CF73BD2889E55E00530295 /* LaunchScreen.storyboard in Resources */,
 				70CF73BA2889E55E00530295 /* Assets.xcassets in Resources */,
 				70CF73B52889E55C00530295 /* Main.storyboard in Resources */,
@@ -307,8 +325,10 @@
 				70CF73B82889E55C00530295 /* FoodApp.xcdatamodeld in Sources */,
 				70CF73CA2889EB0F00530295 /* UIView+Extensions.swift in Sources */,
 				7053EBD728AEECDD0091D6D3 /* HomeViewController.swift in Sources */,
+				708901FE28B6D0C5008E4047 /* PopularDishCollectionViewCell.swift in Sources */,
 				7053EBDE28AEF4E50091D6D3 /* CategoryCollectionViewCell.swift in Sources */,
 				70CF73AE2889E55C00530295 /* AppDelegate.swift in Sources */,
+				7089020128B6D3A4008E4047 /* Dish.swift in Sources */,
 				70CF73CC2889ED2700530295 /* OnboardingSlide.swift in Sources */,
 				70CF73CE2889F1B300530295 /* OnboardingCollectionViewCell.swift in Sources */,
 				7053EBE528B030850091D6D3 /* CardView.swift in Sources */,

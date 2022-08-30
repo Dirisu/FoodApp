@@ -8,9 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularDishCategory: UICollectionView!
+    @IBOutlet weak var dishLandscapeCollection: UICollectionView!
     
     // food categories data source
     var categories: [DishCategory] = [
@@ -18,15 +19,8 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "African Dish 2", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "African Dish 3", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "African Dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish 2", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish 3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "African Dish", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "African Dish", image: "https://picsum.photos/100/200")
-    
+        
     ]
     
     // popular dishes data source
@@ -35,13 +29,18 @@ class HomeViewController: UIViewController {
         .init(id: "id2", name: "Beans", description: "Best Ewa agoin", image: "https://picsum.photos/100/200", calories: 364),
         .init(id: "id2", name: "Cassava", description: "Strong Cassava", image: "https://picsum.photos/100/200", calories: 1050),
         .init(id: "id2", name: "Maize", description: "Agbado for you", image: "https://picsum.photos/100/200", calories: 20),
-        .init(id: "id2", name: "Rice", description: "Destoned Rice", image: "https://picsum.photos/100/200", calories: 3450),
-        .init(id: "id2", name: "Yam", description: "Pounded yam categories", image: "https://picsum.photos/100/200", calories: 295),
+        .init(id: "id2", name: "Rice", description: "Destoned Rice", image: "https://picsum.photos/100/200", calories: 3450)
+    ]
+    
+    var specials: [Dish] = [
+        .init(id: "id2", name: "Cassava", description: "Strong Cassava", image: "https://picsum.photos/100/200", calories: 1050),
+        .init(id: "id2", name: "Maize", description: "Agbado for you", image: "https://picsum.photos/100/200", calories: 20),
+        .init(id: "id2", name: "Rice", description: "Destoned Rice", image: "https://picsum.photos/100/200", calories: 3450)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         registerCells()
         // Do any additional setup after loading the view.
     }
@@ -52,9 +51,12 @@ class HomeViewController: UIViewController {
         
         // popular dishes
         popularDishCategory.register(UINib(nibName: PopularDishCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PopularDishCollectionViewCell.identifier)
+        
+        // special dishes
+        dishLandscapeCollection.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
     }
     
-
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -62,12 +64,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch collectionView {
-            case categoryCollectionView:
-                return categories.count
-            case popularDishCategory:
-                return popularDishes.count
-            default:
-                return 0
+        case categoryCollectionView:
+            return categories.count
+        case popularDishCategory:
+            return popularDishes.count
+        case dishLandscapeCollection:
+            return specials.count
+        default:
+            return 0
         }
         
     }
@@ -75,18 +79,28 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
-            case categoryCollectionView:
+        case categoryCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
             cell.setUp(category: categories[indexPath.row])
             return cell
             
-            case popularDishCategory:
+        case popularDishCategory:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularDishCollectionViewCell.identifier, for: indexPath) as! PopularDishCollectionViewCell
             cell.setUp(dish: popularDishes[indexPath.row])
             
             return cell
-            default:
-                return UICollectionViewCell()        }
+            
+            
+        case dishLandscapeCollection:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            cell.setUp(dish: specials[indexPath.row])
+            
+            return cell
+            
+        default:
+            return UICollectionViewCell()
+            
+        }
         
     }
 }

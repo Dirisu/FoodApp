@@ -19,6 +19,8 @@
 		7089020128B6D3A4008E4047 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089020028B6D3A4008E4047 /* Dish.swift */; };
 		7089020528BDFBDB008E4047 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089020328BDFBDB008E4047 /* DishLandscapeCollectionViewCell.swift */; };
 		7089020628BDFBDB008E4047 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7089020428BDFBDB008E4047 /* DishLandscapeCollectionViewCell.xib */; };
+		7089020928BF917D008E4047 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089020828BF917D008E4047 /* DishDetailViewController.swift */; };
+		7089020B28BF93CE008E4047 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089020A28BF93CE008E4047 /* UIViewController+Extension.swift */; };
 		70CF73AE2889E55C00530295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AD2889E55C00530295 /* AppDelegate.swift */; };
 		70CF73B02889E55C00530295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73AF2889E55C00530295 /* SceneDelegate.swift */; };
 		70CF73B22889E55C00530295 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF73B12889E55C00530295 /* OnboardingViewController.swift */; };
@@ -44,6 +46,8 @@
 		7089020028B6D3A4008E4047 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		7089020328BDFBDB008E4047 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7089020428BDFBDB008E4047 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		7089020828BF917D008E4047 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		7089020A28BF93CE008E4047 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		70CF73AA2889E55C00530295 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF73AD2889E55C00530295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CF73AF2889E55C00530295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,14 @@
 			path = DishLandscapeCollection;
 			sourceTree = "<group>";
 		};
+		7089020728BF915B008E4047 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7089020828BF917D008E4047 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 		70CF73A12889E55C00530295 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +194,7 @@
 		70CF73C72889E68000530295 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7089020728BF915B008E4047 /* DishDetail */,
 				7053EBD828AEF4450091D6D3 /* CollectionViewCell */,
 				7053EBD528AEECC80091D6D3 /* Home */,
 				70CF73C42889E65000530295 /* Onboarding */,
@@ -195,6 +208,7 @@
 				70CF73C92889EB0F00530295 /* UIView+Extensions.swift */,
 				7053EBE228AEFA540091D6D3 /* String+Extension.swift */,
 				7053EBE428B030850091D6D3 /* CardView.swift */,
+				7089020A28BF93CE008E4047 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +351,8 @@
 				70CF73B22889E55C00530295 /* OnboardingViewController.swift in Sources */,
 				7053EBE328AEFA540091D6D3 /* String+Extension.swift in Sources */,
 				7089020528BDFBDB008E4047 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				7089020928BF917D008E4047 /* DishDetailViewController.swift in Sources */,
+				7089020B28BF93CE008E4047 /* UIViewController+Extension.swift in Sources */,
 				7053EBE128AEF8030091D6D3 /* DishCategory.swift in Sources */,
 				70CF73B82889E55C00530295 /* FoodApp.xcdatamodeld in Sources */,
 				70CF73CA2889EB0F00530295 /* UIView+Extensions.swift in Sources */,

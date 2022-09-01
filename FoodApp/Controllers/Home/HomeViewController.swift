@@ -103,4 +103,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            print("food category")
+        } else {
+            let controller = DishDetailViewController.instantiate()
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 }
